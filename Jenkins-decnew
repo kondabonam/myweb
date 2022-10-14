@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'javahome2', url: 'https://github.com/kondabonam/myweb.git'
+                git credentialsId: 'kondajava', url: 'https://github.com/kondabonam/myweb.git'
             }
         }
         stage("Maven Build"){
